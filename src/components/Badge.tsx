@@ -1,4 +1,4 @@
-import { onCleanup, onMount } from 'solid-js';
+/*import { onCleanup, onMount } from 'solid-js';
 
 type Props = {
   botContainer: HTMLDivElement | undefined;
@@ -12,7 +12,7 @@ export const Badge = (props: Props) => {
   let liteBadge: HTMLAnchorElement | undefined;
   let observer: MutationObserver | undefined;
 
-  /*const appendBadgeIfNecessary = (mutations: MutationRecord[]) => {
+  /onst appendBadgeIfNecessary = (mutations: MutationRecord[]) => {
     mutations.forEach((mutation) => {
       mutation.removedNodes.forEach((removedNode) => {
         if ('id' in removedNode && liteBadge && removedNode.id == 'lite-badge') {
@@ -21,7 +21,7 @@ export const Badge = (props: Props) => {
         }
       });
     });
-  };*/
+  };
 
   onMount(() => {
     if (!document || !props.botContainer) return;
@@ -65,3 +65,4 @@ export const Badge = (props: Props) => {
     </span>
   );
 };
+*/
