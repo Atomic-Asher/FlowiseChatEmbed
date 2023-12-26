@@ -1,4 +1,4 @@
-/*import { onCleanup, onMount } from 'solid-js';
+import { onCleanup, onMount } from 'solid-js';
 
 type Props = {
   botContainer: HTMLDivElement | undefined;
@@ -65,4 +65,4 @@ export const Badge = (props: Props) => {
     </span>
   );
 };
-*/
+
