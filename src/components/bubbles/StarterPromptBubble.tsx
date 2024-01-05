@@ -2,6 +2,7 @@ type Props = {
   prompt: string;
   onPromptClick?: () => void;
 };
+
 export const StarterPromptBubble = (props: Props) => (
   <>
     <div
@@ -11,14 +12,12 @@ export const StarterPromptBubble = (props: Props) => (
       onClick={() => props.onPromptClick?.()}
     >
       <span
-        class="px-2 py-1 ml-1 whitespace-pre-wrap chatbot-host-bubble"//"px-2 py-1 ml-1 whitespace-pre-wrap max-w-full chatbot-host-bubble"
+        class="px-2 py-1 ml-1 whitespace-pre-wrap break-words max-w-full chatbot-host-bubble"
         data-testid="host-bubble"
         style={{
-          width: '100%',
           'font-size': '15px',
           'border-radius': '15px',
           cursor: 'pointer',
-          maxWidth: '100%',
         }}
       >
         {props.prompt}
