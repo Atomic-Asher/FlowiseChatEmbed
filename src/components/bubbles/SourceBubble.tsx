@@ -15,7 +15,7 @@ export const SourceBubble = (props: Props) => (
         class="px-2 py-1 ml-1 whitespace-pre-wrap max-w-full chatbot-host-bubble"
         data-testid="host-bubble"
         style={{
-          width: 'max-content',
+          width: 'fit-content', //'max-content'
           'max-width': '80px',
           'font-size': '13px',
           'border-radius': '15px',
