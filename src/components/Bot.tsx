@@ -403,7 +403,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
       >
         <div class="flex w-full h-full justify-center">
           <div
-            style={{ 'padding-bottom': '100px', 'padding-top': '70px' }}
+            style={{ 'padding-bottom': '0px', 'padding-top': '60px' }}
             ref={chatContainer}
             class="overflow-y-scroll min-w-full w-full min-h-full px-3 pt-10 relative scrollable-container chatbot-chat-view scroll-smooth"
           >
@@ -507,7 +507,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
         </div>
         <Show when={messages().length === 1}>
           <Show when={starterPrompts().length > 0}>
-            <div style={{ display: 'flex', 'flex-direction': 'row', padding: '10px', width: '100%', "flex-wrap": 'wrap'}}>
+            <div style={{ display: 'flex', 'flex-direction': 'row', padding: '0px 5px 67px 5px', 'line-height': '20px', width: '100%', "flex-wrap": 'wrap'}}>
               <For each={[...starterPrompts()]}>
                 {(key) => (
                   <StarterPromptBubble
