@@ -12,7 +12,7 @@ export const Badge = (props: Props) => {
   let liteBadge: HTMLAnchorElement | undefined;
   let observer: MutationObserver | undefined;
 
-  /onst appendBadgeIfNecessary = (mutations: MutationRecord[]) => {
+  const appendBadgeIfNecessary = (mutations: MutationRecord[]) => {
     mutations.forEach((mutation) => {
       mutation.removedNodes.forEach((removedNode) => {
         if ('id' in removedNode && liteBadge && removedNode.id == 'lite-badge') {
@@ -65,4 +65,3 @@ export const Badge = (props: Props) => {
     </span>
   );
 };
-
